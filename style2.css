@@ -1,0 +1,97 @@
+/*======= Carrosel Vanilla Bolsas=====*/
+
+.slider .container {
+  margin: 0;
+}
+
+.slider .title {
+  position: absolute;
+  align-items: center;
+  width: 8.25rem;
+  height: 2.8rem;
+  left: 1.5rem;
+  top: 5rem;
+
+  font-family: var(--title-fonts);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.87rem;
+  line-height: 2.8rem;
+  text-align: center;
+}
+
+
+.slider .text {
+  width: 16rem;
+  height: 6.5rem;
+  left: 3.5rem;
+  top: 32rem;
+  align-items: center;
+
+  font-family: var(--body-fonts);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+
+.slider{
+  display: block;
+  height: 12rem;
+  width: 37.5rem;
+  margin: auto;
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.slider li{
+  list-style: none;
+  position: absolute;
+}
+
+.slider img{
+  margin: auto;
+  height: 60%;
+  width: 60%;
+  vertical-align: top;
+}
+
+.slider img{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+.slider input{
+  display: none;
+}
+
+.slider label{
+  background-color: white;
+  bottom: 0.625rem;
+  cursor: pointer;
+  display: block;
+  height: 0.625rem;
+  position: absolute;
+  width: 0.625rem;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+  left: 10px;
+}
+
+.slider li:nth-child(2) label{
+  left: 40px;
+}
+
+.slider li:nth-child(3) label{
+  left: 70px;
+}
